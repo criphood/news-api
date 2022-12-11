@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1600px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    color: #fff;
+    background: #17181c;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .container {
+    flex-direction: column;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 30px;
+}
+
+.pagination__item {
+    transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 1.8em;
+    background: #67a8a0;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+.pagination__item:hover {
+    color: #c4b000;
+}
+
+.pagination__item--active {
+    background: #f5e768;
+    color:#000;
+}
+
+footer {
+    width: 100%;
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background: #17181c;
+    z-index: 10000;
+}
+
+footer .container {
+    height: 100%;
+
+    gap: 20px;
+}
+
+.footer__logo {
+    width: 80px;
+    display: flex;
+    justify-content: start;
+}
+
+#rsschool path,
+#rsschool:hover .st3 path {
+    fill: #fff;
+    transition: all .3s ease;
+}
+
+#rsschool .st3 path {
+    fill: #000;
+}
+
+#rsschool:hover path {
+    fill: #c4b000;
+}
+
+
+.footer__year {
+    color: rgb(82, 82, 82);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__github {
+    display: flex;
+    justify-content: end;
+}
+
+footer #github path {
+    transition: all .3s ease;
+}
+
+footer #github:hover path {
+    fill: #c4b000;
+}
+
+@media (max-width: 1600px) {
+    .container {
+        width: 1300px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 700px;
+        padding: 10px 0 0 0;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+
+    .sources {
+        height: 70px;
+    }
+
+    .source__item {
+        padding: 0.5em 1em;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 315px;
+    }
+}
