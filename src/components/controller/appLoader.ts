@@ -1,6 +1,7 @@
 import Loader from './loader';
 
-const proxy = 'https://newsapi-redirect-production.up.railway.app/';
+// const proxy = 'https://newsapi-redirect-production.up.railway.app/';
+const proxy = 'https://newsapi.org/v2/';
 
 class AppLoader extends Loader {
   constructor() {
